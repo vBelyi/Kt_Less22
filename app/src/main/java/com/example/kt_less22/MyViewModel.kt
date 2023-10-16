@@ -1,12 +1,9 @@
 package com.example.kt_less22
 
 import android.view.View
-import android.widget.ListView
-import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.ViewModel
 import androidx.recyclerview.widget.RecyclerView
-import com.example.kt_less22.api_service.ApiInterface
 import com.example.kt_less22.api_service.HeroResponse
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.GlobalScope
@@ -44,7 +41,6 @@ class MyViewModel @Inject constructor(var repo: Repository): ViewModel() {
                 } else {
                     throw Exception("errrorrr")
                 }
-
         }
 
     }
